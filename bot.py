@@ -9,6 +9,9 @@ import sys
 import requests
 import json
 
+import keep_alive # Import du fichier créé
+keep_alive.keep_alive()
+
 def setup_logging():
     # Crée un dossier 'logs' s'il n'existe pas
     if not os.path.exists('logs'):
