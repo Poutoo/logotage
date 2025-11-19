@@ -184,7 +184,7 @@ async def on_message(message):
                     inline=False
                 )
                 timestamp_text = message.created_at.strftime('Date : %Y-%m-%d - %H:%M:%S')
-                embed.set_footer(text=timestamp_text)
+                error_embed.set_footer(text=timestamp_text)
                 
                 # Envoi de l'Embed, avec une référence au message original pour la clarté
                 await message.channel.send(embed=error_embed, reference=message)
