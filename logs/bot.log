@@ -1,0 +1,36 @@
+2025-11-19 09:05:44,457 | WARNING | discord.client | PyNaCl is not installed, voice will NOT be supported
+2025-11-19 09:05:44,472 | INFO | discord.client | logging in using static token
+2025-11-19 09:07:44,729 | WARNING | discord.client | PyNaCl is not installed, voice will NOT be supported
+2025-11-19 09:07:44,905 | INFO | discord.client | logging in using static token
+2025-11-19 09:07:46,321 | INFO | discord.gateway | Shard ID None has connected to Gateway (Session ID: aafbf5767b9cc6bea82dd557763d3c14).
+2025-11-19 09:07:48,359 | INFO | discord | Bot démarré et connecté en tant que Logotage#9413
+2025-11-19 09:08:03,045 | ERROR | discord | Erreur critique inattendue : 413 Payload Too Large (Simulé)
+Traceback (most recent call last):
+  File "C:\Users\thibault.dehu\OneDrive - Houlès\Bureau\vscode\logotage\bot.py", line 127, in on_message
+    success = image_process.add_watermark(original_filename, logoted_filename)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\thibault.dehu\OneDrive - Houlès\Bureau\vscode\logotage\image_process.py", line 15, in add_watermark
+    raise Exception("413 Payload Too Large (Simulé)")
+Exception: 413 Payload Too Large (Simulé)
+2025-11-19 09:08:03,061 | ERROR | discord.client | Ignoring exception in on_message
+Traceback (most recent call last):
+  File "C:\Users\thibault.dehu\OneDrive - Houlès\Bureau\vscode\logotage\bot.py", line 127, in on_message
+    success = image_process.add_watermark(original_filename, logoted_filename)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\thibault.dehu\OneDrive - Houlès\Bureau\vscode\logotage\image_process.py", line 15, in add_watermark
+    raise Exception("413 Payload Too Large (Simulé)")
+Exception: 413 Payload Too Large (Simulé)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\thibault.dehu\OneDrive - Houlès\Bureau\vscode\logotage\.venv\Lib\site-packages\discord\client.py", line 504, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\thibault.dehu\OneDrive - Houlès\Bureau\vscode\logotage\bot.py", line 187, in on_message
+    embed.set_footer(text=timestamp_text)
+    ^^^^^
+UnboundLocalError: cannot access local variable 'embed' where it is not associated with a value
+2025-11-19 09:08:53,462 | WARNING | discord.client | PyNaCl is not installed, voice will NOT be supported
+2025-11-19 09:08:53,507 | INFO | discord.client | logging in using static token
+2025-11-19 09:08:54,673 | INFO | discord.gateway | Shard ID None has connected to Gateway (Session ID: 0c69133adcaa5556a32265cb86d8feba).
+2025-11-19 09:08:56,730 | INFO | discord | Bot démarré et connecté en tant que Logotage#9413
