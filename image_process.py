@@ -21,7 +21,7 @@ def add_watermark(input_image_path, output_image_path):
         logo = Image.open(config.LOGO_PATH).convert("RGBA")
         
         # --- 1. Redimensionnement du Logo (inchangé) ---
-        logo_width = int(base_image.width * 0.2)
+        logo_width = int(base_image.width * 0.3)
         logo_height = int(logo.height * (logo_width / logo.width))
         logo = logo.resize((logo_width, logo_height))
 
